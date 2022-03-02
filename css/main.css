@@ -1,0 +1,220 @@
+*
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'sans-serif';
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 500;
+  display: swap;
+  src: url("../fonts/roboto-mono-v13-latin-500.woff2") format("woff2"), url("../fonts/roboto-mono-v13-latin-500.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  display: swap;
+  src: url("../fonts/rubik-v18-latin-regular.woff2") format("woff2"), url("../fonts/rubik-v18-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.container {
+  max-width: 1462px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.lookat__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: scroll;
+  overflow: auto;
+}
+
+.lookat__item {
+  margin-right: 104px;
+  max-width: 105px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.lookat__item:last-child {
+  margin: 0;
+}
+
+.lookat__imgs {
+  margin-left: 9px;
+}
+
+.lookat__text {
+  margin: 0;
+  font-weight: 500;
+  font-family: 'roboto mono';
+  text-transform: uppercase;
+  color: #2D2D2D;
+}
+
+.lookat__btn {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+}
+
+.lookat__button {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  background-color: snow;
+}
+
+.lookat__button-img {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  top: 13px;
+  left: 17px;
+}
+
+.lookat__button-img--left {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.lookat__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lookat__heading {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 24px;
+  color: #0D444D;
+  text-transform: uppercase;
+  margin-bottom: 42px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 630px) {
+  .lookat__button--left {
+    display: none;
+  }
+  .lookat__nav {
+    display: block;
+  }
+  .lookat__button {
+    margin: 0 auto;
+    margin-top: 27px;
+  }
+  .lookat__button-img--right {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .lookat__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .lookat__item {
+    margin: 0;
+    margin-right: auto;
+    margin-bottom: 34px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .lookat__heading {
+    font-size: 18px;
+    margin-left: 0;
+  }
+}
+
+.grid__container {
+  width: 1100px;
+  background-color: grey;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-template: "box1 box1 box1" "box2 box3 box4" "box2 box5 box5";
+  padding: 40px;
+  gap: 10px;
+}
+
+.grid__container-1 {
+  background-color: red;
+  grid-area: box1;
+}
+
+.grid__container-2 {
+  background-color: blue;
+  color: snow;
+  grid-area: box2;
+}
+
+.grid__container-3 {
+  background-color: green;
+  grid-area: box3;
+}
+
+.grid__container-4 {
+  background-color: snow;
+  grid-area: box4;
+}
+
+.grid__container-5 {
+  background-color: orange;
+  grid-area: box5;
+}
+
+.container__grids {
+  text-align: center;
+  padding: 30px;
+}
+/*# sourceMappingURL=main.css.map */

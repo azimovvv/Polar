@@ -1,0 +1,45 @@
+.grid__container {
+    width: 1100px;
+    background-color: grey;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template: "box1 box1 box1" "box2 box3 box4" "box2 box5 box5";
+    padding: 40px;
+    gap: 10px;
+}
+
+.grid__container-1 {
+    background-color: red;
+    grid-area: box1;
+}
+
+.grid__container-2 {
+    background-color: blue;
+    color: $snow;
+    grid-area: box2;
+}
+
+.grid__container-3 {
+    background-color: green;
+    grid-area: box3;
+}
+
+.grid__container-4 {
+    background-color: $snow;
+    grid-area: box4;
+}
+
+.grid__container-5 {
+    background-color: orange;
+    grid-area: box5;
+}
+
+.container__grids {
+    text-align: center;
+    padding: 30px;
+}
+
+
+// github link of Otashiy'https://github.com/otashiy/online-teatr'
